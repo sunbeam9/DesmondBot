@@ -267,10 +267,6 @@ app.get("/clientId", (request, response) => {
 	response.send({ clientId: clientId });
 });
 
-app.get("/redirectUri", (request, response) => {
-	response.send({ redirectUri: redirectUri });
-});
-
 // start the bot
 
 client.login(token);
